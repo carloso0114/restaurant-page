@@ -1,7 +1,7 @@
 {
-  "name": "texano1931",
+  "name": "restaurant-page",
   "version": "1.0.0",
-  "description": "Tribute to my favorite restaurant",
+  "description": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/carloso0114/restaurant-page.git"
   },
-  "author": "Carlos Ospina",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/carloso0114/restaurant-page/issues"
@@ -18,7 +19,6 @@
   "homepage": "https://github.com/carloso0114/restaurant-page#readme",
   "devDependencies": {
     "webpack": "^5.37.1",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-cli": "^4.7.0"
   }
 }
