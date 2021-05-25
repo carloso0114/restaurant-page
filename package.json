@@ -1,0 +1,19 @@
+{
+  "name": "texano1931",
+  "version": "1.0.0",
+  "description": "Tribute to my favorite restaurant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloso0114/restaurant-page.git"
+  },
+  "author": "Carlos Ospina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carloso0114/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/carloso0114/restaurant-page#readme"
+}
