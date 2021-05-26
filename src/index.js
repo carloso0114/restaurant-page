@@ -1,1 +1,1 @@
-document.getElementById("demo").innerHTML = "Hello World!";
+import { pageLoad } from './navbar';
