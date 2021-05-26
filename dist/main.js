@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"renderContactPage\": () => (/* binding */ renderContactPage)\n/* harmony export */ });\nconst renderContactPage = (() => {\r\n    // container\r\n    const contentContainer = document.querySelector('#content');\r\n    const contact = document.createElement('div');\r\n    contact.setAttribute('id', 'contact');\r\n    contact.setAttribute('data-tab-content', '');\r\n    contact.innerHTML = `\r\n      <div class=\"hero\">\r\n      <h1>Contact us</h1>\r\n    </div>\r\n    <div class=\"contact-container\">\r\n      <div class=\"info\">\r\n        <div class=\"address\">\r\n          <p>\r\n            <i class=\"fi-xnsuxl-map-marker-solid\"></i>Gombe OUA 390<br />San\r\n            Kinshasa\r\n          </p>\r\n        </div>\r\n        <div class=\"hours\">\r\n          <p>\r\n            <i class=\"fi-cnsuhl-clock-solid\"></i\r\n            ><span>Mon-Thurs:</span>8am-8pm<br /><span>Fri-Sun:</span\r\n            >8am-11pm\r\n          </p>\r\n        </div>\r\n        <div class=\"phone\">\r\n          <p><i class=\"fi-xnsrxl-phone-solid\"></i>(243)-999 999 999</p>\r\n        </div>\r\n        <div class=\"contact-form\">\r\n          <form onsubmit=\"return false\">\r\n            <h3><i class=\"fi-xwsuxl-envelope-solid\"></i>Message us</h3>\r\n            <div class=\"input-box\">\r\n              <input type=\"text\" required />\r\n              <span>Full Name</span>\r\n            </div>\r\n            <div class=\"input-box\">\r\n              <input type=\"text\" required />\r\n              <span>Email</span>\r\n            </div>\r\n            <div class=\"input-box\">\r\n              <textarea required></textarea>\r\n              <span>Type your message...</span>\r\n            </div>\r\n            <input type=\"submit\" value=\"Send\" />\r\n          </form>\r\n        </div>\r\n      </div>\r\n    </div>`;\r\n  \r\n    contentContainer.appendChild(contact);\r\n  })();\r\n  \r\n  \n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
