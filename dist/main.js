@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageload */ \"./src/pageload.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n\r\n\r\n\r\n\r\n\r\nconst tabs = document.querySelectorAll('[data-tab-target]');\r\nconst tabContents = document.querySelectorAll('[data-tab-content]');\r\n\r\nconst burger = document.querySelector('.hamburger');\r\n\r\nburger.addEventListener('click', () => {\r\n  document.querySelector('ul').classList.toggle('active');\r\n  burger.classList.toggle('toggle');\r\n});\r\n\r\ntabs.forEach((tab) => tab.addEventListener('click', () => {\r\n    const target = document.querySelector(tab.dataset.tabTarget);\r\n    tabContents.forEach((tabContent) => {\r\n      tabContent.classList.remove('active');\r\n    });\r\n    tabs.forEach((tab) => {\r\n      tab.classList.remove('red');\r\n    });\r\n    tab.classList.add('red');\r\n    target.classList.add('active');\r\n  }));\r\n  \r\n  document.querySelector('.order-now').addEventListener('click', () => {\r\n    document.querySelector('[data-tab-target=\"#menu\"]').classList.add('red');\r\n  });\r\n  \r\n  document.querySelector('[type=\"submit\"]').addEventListener('click', () => {\r\n    document.querySelector('form').reset();\r\n  });\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -50,13 +50,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/navbar.js":
-/*!***********************!*\
-  !*** ./src/navbar.js ***!
-  \***********************/
+/***/ "./src/pageload.js":
+/*!*************************!*\
+  !*** ./src/pageload.js ***!
+  \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"pageLoad\": () => (/* binding */ pageLoad)\n/* harmony export */ });\nconst pageLoad = (() => {\r\n    const contentContainer = document.querySelector('#content');\r\n  \r\n    const header = document.createElement('header');\r\n    header.innerHTML = `\r\n    <nav>\r\n    <h2>Restaurant</h2>\r\n    <a href=\"#\" class=\"hamburger\">\r\n      <span class=\"line line1\"></span>\r\n      <span class=\"line line2\"></span>\r\n      <span class=\"line line3\"></span>\r\n    </a>\r\n    <ul class=\"links\">\r\n      <li data-tab-target=\"#home\" class=\"tab red\">Home</li>\r\n      <li data-tab-target=\"#menu\" class=\"tab\">Menu</li>\r\n      <li data-tab-target=\"#contact\" class=\"tab\">Contact us</li>\r\n    </ul>\r\n  </nav>`;\r\n  \r\n    contentContainer.appendChild(header);\r\n    })();\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/navbar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"pageLoad\": () => (/* binding */ pageLoad)\n/* harmony export */ });\nconst pageLoad = (() => {\r\n    const contentContainer = document.querySelector('#content');\r\n  \r\n    const header = document.createElement('header');\r\n    header.innerHTML = `\r\n    <nav>\r\n    <h2>Restaurant</h2>\r\n    <a href=\"#\" class=\"hamburger\">\r\n      <span class=\"line line1\"></span>\r\n      <span class=\"line line2\"></span>\r\n      <span class=\"line line3\"></span>\r\n    </a>\r\n    <ul class=\"links\">\r\n      <li data-tab-target=\"#home\" class=\"tab red\">Home</li>\r\n      <li data-tab-target=\"#menu\" class=\"tab\">Menu</li>\r\n      <li data-tab-target=\"#contact\" class=\"tab\">Contact us</li>\r\n    </ul>\r\n  </nav>`;\r\n  \r\n    contentContainer.appendChild(header);\r\n    })();\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/pageload.js?");
 
 /***/ })
 
