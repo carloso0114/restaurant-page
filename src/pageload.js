@@ -1,23 +1,44 @@
 const pageLoad = (() => {
-    const contentContainer = document.querySelector('#content');
+  const contentContainer = document.querySelector('body');
   
-    const header = document.createElement('header');
-    header.innerHTML = `
-    <nav>
-    <h2>Restaurant</h2>
-    <a href="#" class="hamburger">
-      <span class="line line1"></span>
-      <span class="line line2"></span>
-      <span class="line line3"></span>
-    </a>
-    <ul class="links">
-      <li data-tab-target="#home" class="tab red">Home</li>
-      <li data-tab-target="#menu" class="tab">Menu</li>
-      <li data-tab-target="#contact" class="tab">Contact us</li>
-    </ul>
+  const header = document.createElement('header');
+  header.innerHTML = `
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+      <div class="collapse navbar-collapse justify-content-md-center">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" id="home-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="menu-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="contact-link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
   </nav>`;
   
-    contentContainer.appendChild(header);
-    })();
+  const content = document.createElement('div');
+  content.setAttribute('id', 'content');
+
+  
+
+  const footer = document.createElement('footer');
+
+  footer.classList.add('py-4','bg-dark','flex-shrink-0');
+  footer.innerHTML=`
+  <div class="container text-center">
+    <a href="#" class="text-muted">This is the footer</a>
+  </div>`;
+
+  contentContainer.append(header);
+  contentContainer.append(content);
+  contentContainer.append(footer);
+})();
 
 export { pageLoad };

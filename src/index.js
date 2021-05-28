@@ -1,34 +1,21 @@
-import { pageLoad } from './pageload';
-import { renderHomePage } from './home';
-import { renderMenuPage } from './menu';
-import { renderContactPage } from './contact';
+import {
+    pageLoad
+} from './pageload';
+import {
+    renderHomePage
+} from './home';
+const body = document.querySelector('#content');
+const menuLink = document.querySelector('#menu-link');
+const homeLink = document.querySelector('#home-link')
+const contactLink = document.querySelector('#contact-link')
 
-const tabs = document.querySelectorAll('[data-tab-target]');
-const tabContents = document.querySelectorAll('[data-tab-content]');
+menuLink.addEventListener("click", e => {
+    body.innerHTML = `menu`
+})
+homeLink.addEventListener("click", e => {
+    body.innerHTML = `home`
+})
+contactLink.addEventListener("click", e => {
+    body.innerHTML = `contact`
+})
 
-const burger = document.querySelector('.hamburger');
-
-burger.addEventListener('click', () => {
-  document.querySelector('ul').classList.toggle('active');
-  burger.classList.toggle('toggle');
-});
-
-tabs.forEach((tab) => tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.tabTarget);
-    tabContents.forEach((tabContent) => {
-      tabContent.classList.remove('active');
-    });
-    tabs.forEach((tab) => {
-      tab.classList.remove('red');
-    });
-    tab.classList.add('red');
-    target.classList.add('active');
-  }));
-  
-  document.querySelector('.order-now').addEventListener('click', () => {
-    document.querySelector('[data-tab-target="#menu"]').classList.add('red');
-  });
-  
-  document.querySelector('[type="submit"]').addEventListener('click', () => {
-    document.querySelector('form').reset();
-  });
