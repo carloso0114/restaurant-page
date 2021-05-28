@@ -7,7 +7,6 @@ import {
 import {
     renderMenu
 } from './menu';
-
 import {
     renderContactPage
 } from './contact';
