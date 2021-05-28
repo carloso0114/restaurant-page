@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"renderMenu\": () => (/* binding */ renderMenu)\n/* harmony export */ });\nconst renderMenu = (() => {\r\n    const menuLink = document.querySelector('#menu-link');\r\n    const body = document.querySelector('#content');\r\n    \r\n    menuLink.addEventListener(\"click\", e => {\r\n      body.innerHTML = `menu`\r\n    })\r\n\r\n  })();\r\n  \n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"renderMenu\": () => (/* binding */ renderMenu)\n/* harmony export */ });\nconst renderMenu = (() => {\r\n    const menuLink = document.querySelector('#menu-link');\r\n    const body = document.querySelector('#content');\r\n\r\n    menuLink.addEventListener(\"click\", e => {\r\n        body.innerHTML = `<div class=\"card\" style=\"width: 18rem;\">\r\n    <img class=\"card-img-top\" src=\"...\" alt=\"Card image cap\">\r\n    <div class=\"card-body\">\r\n    <h5 class=\"card-title\">Card title</h5>\r\n    <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\r\n    <a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\r\n    </div>\r\n    </div>`\r\n    })\r\n\r\n})();\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ }),
 
