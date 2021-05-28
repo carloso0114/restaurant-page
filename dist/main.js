@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"renderContactPage\": () => (/* binding */ renderContactPage)\n/* harmony export */ });\nconst renderContactPage = (() => {\r\n  const contactLink = document.querySelector('#contact-link')\r\n  const body = document.querySelector('#content');\r\n\r\n  contactLink.addEventListener(\"click\", e => {\r\n    body.innerHTML = `contact`\r\n  })\r\n  })();\r\n  \r\n  \n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"renderHomePage\": () => (/* binding */ renderHomePage)\n/* harmony export */ });\nconst renderHomePage = (() => {\r\n    const contentContainer = document.querySelector('#content');\r\n    contentContainer.innerHTML=`default page`\r\n\r\n  })();\r\n  \n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"renderHomePage\": () => (/* binding */ renderHomePage)\n/* harmony export */ });\nconst renderHomePage = (() => {\r\n    const contentContainer = document.querySelector('#content');\r\n    contentContainer.innerHTML=`home`\r\n    \r\n    const homeLink = document.querySelector('#home-link')\r\n    homeLink.addEventListener(\"click\", e => {\r\n      contentContainer.innerHTML = `home`\r\n    })\r\n  })();\r\n  \r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
 
 /***/ }),
 
@@ -26,7 +36,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageload */ \"./src/pageload.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\r\n\r\nconst body = document.querySelector('#content');\r\nconst menuLink = document.querySelector('#menu-link');\r\nconst homeLink = document.querySelector('#home-link')\r\nconst contactLink = document.querySelector('#contact-link')\r\n\r\nmenuLink.addEventListener(\"click\", e => {\r\n    body.innerHTML = `menu`\r\n})\r\nhomeLink.addEventListener(\"click\", e => {\r\n    body.innerHTML = `home`\r\n})\r\ncontactLink.addEventListener(\"click\", e => {\r\n    body.innerHTML = `contact`\r\n})\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageload */ \"./src/pageload.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"renderMenu\": () => (/* binding */ renderMenu)\n/* harmony export */ });\nconst renderMenu = (() => {\r\n    const menuLink = document.querySelector('#menu-link');\r\n    const body = document.querySelector('#content');\r\n    \r\n    menuLink.addEventListener(\"click\", e => {\r\n      body.innerHTML = `menu`\r\n    })\r\n\r\n  })();\r\n  \n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ }),
 
