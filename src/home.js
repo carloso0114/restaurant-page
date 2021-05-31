@@ -11,13 +11,13 @@ var renderHomePage = (function () {
           const logo = document.createElement('img');
           const backgroundDiv = document.createElement('div');
           const description = document.createElement('h1');
-          backgroundDiv.classList.add('background');
+          main.classList.add('mx-auto');
+          backgroundDiv.classList.add('background','my-2');
           logo.src='./images/logo.png'
-          logo.classList.add('rounded-circle', 'my-2');
-          main.classList.add('my-2','mx-auto');
+          logo.classList.add('rounded-circle');
           description.textContent= "Welcome";
           main.innerHTML = ``  
-          main.appendChild(backgroundDiv); 
+          main.append(backgroundDiv); 
           backgroundDiv.appendChild(description); 
           backgroundDiv.appendChild(logo); 
        }        

@@ -4,7 +4,7 @@ const pageLoad = (() => {
   header.innerHTML = `
   <nav class="navbar navbar-expand navbar-dark bg-dark">
   <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarsExample02">
+    <div class="collapse navbar-collapse">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#" id="home-link">Home</a>
