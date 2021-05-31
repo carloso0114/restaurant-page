@@ -17,5 +17,6 @@ const contactLink = document.querySelector('#contact-link');
 
 homeLink.addEventListener("click", () => { renderHomePage.displayHome()})
 menuLink.addEventListener("click", () => { renderMenuPage.displayMenu()})
+contactLink.addEventListener("click", () => { renderContactPage.displayContact()})
 
 renderHomePage.displayHome();
