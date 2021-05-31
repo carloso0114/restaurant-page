@@ -16,7 +16,7 @@ var renderHomePage = (function () {
           logo.src='./images/logo.png'
           logo.classList.add('rounded-circle');
           description.textContent= "Welcome";
-          main.innerHTML = ``  
+          main.innerHTML = `` 
           main.append(backgroundDiv); 
           backgroundDiv.appendChild(description); 
           backgroundDiv.appendChild(logo); 

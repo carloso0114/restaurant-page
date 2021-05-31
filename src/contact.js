@@ -51,7 +51,7 @@ var renderContactPage = (function () {
                           <div class="info">
                             <h3 class="title">MAIL</h3>
                             <p>
-                              <i class="fa fa-envelope" aria-hidden="true"></i> thisrestaurant@myrestaurant.com
+                              <i class="fa fa-envelope" aria-hidden="true"></i> elgordo@eltexano1931.com
                             </p>
                           </div>
                         </div>
@@ -65,7 +65,7 @@ var renderContactPage = (function () {
                           <div class="info">
                             <h3 class="title">CONTACT</h3>
                             <p>
-                              <i class="fab fa-whatsapp-square"></i> (+57)-9624XXXXX
+                              <i class="fab fa-whatsapp-square"></i> (+57)-3126128566
                             </p>
                           </div>
                         </div>
@@ -79,8 +79,7 @@ var renderContactPage = (function () {
                           <div class="info">
                             <h3 class="title">ADDRESS</h3>
                             <p>
-                              <i class="fa fa-map-marker" aria-hidden="true"></i> 15/3 Junction Plot Shree Krishna Krupa",
-                              Rajkot - 360001.
+                              <i class="fa fa-map-marker" aria-hidden="true"></i> Street 93 # 51B # 425
                             </p>
                           </div>
                         </div>

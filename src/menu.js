@@ -8,9 +8,7 @@ var renderMenuPage = (function () {
               homeLink.classList.remove('active');
               menuLink.classList.add('active');
               contactLink.classList.remove('active');
-              main.innerHTML=``;
-              main.classList.add('background');
-              renderMenuPage.card("./images/logo.png","Beef","this comes from cow","1000");
+              main.innerHTML=``;              
               renderMenuPage.card("./images/logo.png","Beef","this comes from cow","1000");
               renderMenuPage.card("./images/logo.png","Beef","this comes from cow","1000");
     },
@@ -21,7 +19,7 @@ var renderMenuPage = (function () {
        const cardTitle = document.createElement('h4');
        const cardText = document.createElement('h5');
        const priceTag = document.createElement('h5');
-       divCard.classList.add('card', 'card-body', 'mb-3');
+       divCard.classList.add('background','my-1');
        cardImage.src = picture;
        cardImage.classList.add('rounded-circle');
        cardTitle.classList.add('card-title', 'd-flex', 'justify-content-center');
@@ -30,11 +28,11 @@ var renderMenuPage = (function () {
        cardText.textContent = description;
        priceTag.textContent = price+" USD $";
        
-       divCard.appendChild(cardImage);
-       divCard.appendChild(cardTitle);
-       divCard.appendChild(cardText);
-       divCard.appendChild(priceTag);
-       main.appendChild(divCard);
+       divCard.append(cardImage);
+       divCard.append(cardTitle);
+       divCard.append(cardText);
+       divCard.append(priceTag);
+       main.append(divCard);
     }        
 };
 })();
