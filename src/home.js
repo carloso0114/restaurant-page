@@ -1,36 +1,27 @@
-const renderHomePage = (() => {
-  const contentContainer = document.querySelector('#content');
-
-  const homeHtml = `
-    <main>
-    <h1 class="text-center"> Restaurant Page </h1>
-  <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
-  <div class="card-body">
-  <h5 class="card-title">Delicious FastFood</h5>
-  <p class="card-text">Prepare yourself to taste the heaven in a dish.</p>
-  </div>
-  </div>
-  <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
-  <div class="card-header">Hours</div>
-  <div class="card-body">
-  <h5 class="card-title">24/7</h5>
-  <p class="card-text"> From Thursday to Sunday only.</p>
-  </div>
-  </div>
-  <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
-  <div class="card-header">Location</div>
-  <div class="card-body">
-  <h5 class="card-title">Barranquilla, Colombia</h5>
-  <p class="card-text">742 Evergreen Terrace.</p>
-  </div>
-  </div>
-  </main>`
-  contentContainer.innerHTML = homeHtml;
-
-  const homeLink = document.querySelector('#home-link')
-  homeLink.addEventListener("click", e => {
-    contentContainer.innerHTML = homeHtml;
-  })
+var renderHomePage = (function () {
+  return {
+      displayHome: function () {
+          const main = document.querySelector('#content');
+          const homeLink = document.querySelector("#home-link");
+          const menuLink = document.querySelector("#menu-link");
+          const contactLink = document.querySelector('#contact-link');
+          homeLink.classList.add('active');
+          menuLink.classList.remove('active');
+          contactLink.classList.remove('active');
+          const logo = document.createElement('img');
+          const backgroundDiv = document.createElement('div');
+          const description = document.createElement('h1');
+          backgroundDiv.classList.add('background');
+          logo.src='./images/logo.png'
+          logo.classList.add('rounded-circle', 'my-2');
+          main.classList.add('my-2','mx-auto');
+          description.textContent= "Welcome";
+          main.innerHTML = ``  
+          main.appendChild(backgroundDiv); 
+          backgroundDiv.appendChild(description); 
+          backgroundDiv.appendChild(logo); 
+       }        
+   };
 })();
 export {
   renderHomePage

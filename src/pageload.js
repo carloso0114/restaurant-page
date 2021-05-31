@@ -21,8 +21,8 @@ const pageLoad = (() => {
   </nav>
   `;
   
-  const content = document.createElement('div');
-  content.setAttribute('id', 'content');
+  const main = document.createElement('div');
+  main.setAttribute('id', 'content');
 
   const footer = document.createElement('footer');
 
@@ -33,7 +33,7 @@ const pageLoad = (() => {
   </div>`;
 
   contentContainer.append(header);
-  contentContainer.append(content);
+  contentContainer.append(main);
   contentContainer.append(footer);
 })();
 

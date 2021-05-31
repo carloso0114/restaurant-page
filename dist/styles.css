@@ -1,23 +1,34 @@
 @font-face {
     font-family: "armyrust";
     src: url("../src/fonts/armyrust.ttf");
-    }
-
-#content {
-
 }
 
 * {
     font-family: armyrust;
 }
 
-@media (min-width: 1200px) { }
- 
+#content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('images/background.png') no-repeat center fixed;
+    background-size: cover;
+}
 
-@media (min-width: 768px) and (max-width: 979px) { }
- 
+.background {
+    padding: 25px 25px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+}
 
-@media (max-width: 767px) { }
- 
+footer {
+    margin-top: auto;
+}
 
-@media (max-width: 480px) { }
+@media (min-width: 1200px) {}
+
+@media (min-width: 768px) and (max-width: 979px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 480px) {}
