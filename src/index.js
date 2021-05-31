@@ -5,7 +5,7 @@ import {
     renderHomePage
 } from './home';
 import {
-    renderMenu
+    renderMenuPage
 } from './menu';
 import {
     renderContactPage
@@ -15,8 +15,7 @@ const homeLink = document.querySelector("#home-link");
 const menuLink = document.querySelector("#menu-link");
 const contactLink = document.querySelector('#contact-link');
 
-renderHomePage.displayHome();
-
 homeLink.addEventListener("click", () => { renderHomePage.displayHome()})
-menuLink.addEventListener("click", () => { DisplayMenu.displayMenu()})
-contactLink.addEventListener("click", () => { DisplayContact.displayContact()})
+menuLink.addEventListener("click", () => { renderMenuPage.displayMenu()})
+
+renderHomePage.displayHome();
