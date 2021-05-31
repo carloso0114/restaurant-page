@@ -5,6 +5,8 @@ var renderContactPage = (function () {
           const homeLink = document.querySelector("#home-link");
           const menuLink = document.querySelector("#menu-link");
           const contactLink = document.querySelector('#contact-link');
+          const bodySel = document.querySelector('body');
+          bodySel.classList.remove('bodyBackground2');
           homeLink.classList.remove('active');
           menuLink.classList.remove('active');
           contactLink.classList.add('active');

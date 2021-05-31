@@ -26,6 +26,17 @@ body {
     overflow-wrap: break-word;
 }
 
+.max-width-pic {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.bodyBackground2 {
+    background: url('images/background2.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
 footer {
     margin-top: auto;
 }
