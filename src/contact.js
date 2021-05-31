@@ -8,9 +8,9 @@ var renderContactPage = (function () {
           homeLink.classList.remove('active');
           menuLink.classList.remove('active');
           contactLink.classList.add('active');
-                  main.innerHTML = `<div class="container">
+                  main.innerHTML = `<div class="container my-2">
 
-                  <div class="row background">
+                  <div class="row background ">
                     <h1 class="header-title"> Contact </h1>
                     <hr>
                     <div class="col-sm-6">

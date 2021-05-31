@@ -21,6 +21,11 @@ body {
     border-radius: 20px;
 }
 
+.description-mw {
+    max-width: 500px;
+    overflow-wrap: break-word;
+}
+
 footer {
     margin-top: auto;
 }

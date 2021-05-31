@@ -10,16 +10,22 @@ var renderHomePage = (function () {
           contactLink.classList.remove('active');
           const logo = document.createElement('img');
           const backgroundDiv = document.createElement('div');
-          const description = document.createElement('h1');
-          main.classList.add('mx-auto');
-          backgroundDiv.classList.add('background','my-2');
+          const title = document.createElement('h1');
+          const description = document.createElement('h4');
+          const divDescription = document.createElement('div');
+          divDescription.classList.add('description-mw');
+          description.textContent = "Food understands that the only safe haven from Chuck Norris' fists is inside his own body.";
+          backgroundDiv.classList.add('background','my-2','text-center');
           logo.src='./images/logo.png'
-          logo.classList.add('rounded-circle');
-          description.textContent= "Welcome";
+          logo.classList.add('rounded-circle','my-1');
+          title.textContent= "Welcome to";
           main.innerHTML = `` 
+          main.classList.add('mx-auto');
           main.append(backgroundDiv); 
-          backgroundDiv.appendChild(description); 
+          backgroundDiv.appendChild(title); 
           backgroundDiv.appendChild(logo); 
+          backgroundDiv.appendChild(divDescription);
+          divDescription.appendChild(description)
        }        
    };
 })();

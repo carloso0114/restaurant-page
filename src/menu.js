@@ -5,6 +5,7 @@ var renderMenuPage = (function () {
               const homeLink = document.querySelector("#home-link");
               const menuLink = document.querySelector("#menu-link");
               const contactLink = document.querySelector('#contact-link');
+              main.classList.add('mx-auto');
               homeLink.classList.remove('active');
               menuLink.classList.add('active');
               contactLink.classList.remove('active');
@@ -19,7 +20,7 @@ var renderMenuPage = (function () {
        const cardTitle = document.createElement('h4');
        const cardText = document.createElement('h5');
        const priceTag = document.createElement('h5');
-       divCard.classList.add('background','my-1');
+       divCard.classList.add('background','my-2');
        cardImage.src = picture;
        cardImage.classList.add('rounded-circle');
        cardTitle.classList.add('card-title', 'd-flex', 'justify-content-center');
