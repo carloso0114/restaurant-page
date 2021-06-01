@@ -1,16 +1,16 @@
-var renderContactPage = (function () {
+const renderContactPage = (function () {
   return {
-      displayContact: function () {
-          const main = document.querySelector('#content');
-          const homeLink = document.querySelector("#home-link");
-          const menuLink = document.querySelector("#menu-link");
-          const contactLink = document.querySelector('#contact-link');
-          const bodySel = document.querySelector('body');
-          bodySel.classList.remove('bodyBackground2');
-          homeLink.classList.remove('active');
-          menuLink.classList.remove('active');
-          contactLink.classList.add('active');
-                  main.innerHTML = `<div class="container my-2">
+    displayContact() {
+      const main = document.querySelector('#content');
+      const homeLink = document.querySelector('#home-link');
+      const menuLink = document.querySelector('#menu-link');
+      const contactLink = document.querySelector('#contact-link');
+      const bodySel = document.querySelector('body');
+      bodySel.classList.remove('bodyBackground2');
+      homeLink.classList.remove('active');
+      menuLink.classList.remove('active');
+      contactLink.classList.add('active');
+      main.innerHTML = `<div class="container my-2">
 
                   <div class="row background ">
                     <h1 class="header-title"> Contact </h1>
@@ -88,10 +88,8 @@ var renderContactPage = (function () {
                       </div>
                     </div>
                   </div>
-                  </div>`
-       }
-   };
-})();
-export {
-  renderContactPage
-};
+                  </div>`;
+    },
+  };
+}());
+export default renderContactPage;

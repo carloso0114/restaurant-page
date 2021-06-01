@@ -20,14 +20,13 @@ const pageLoad = (() => {
   </div>
   </nav>
   `;
-  
   const main = document.createElement('div');
   main.setAttribute('id', 'content');
 
   const footer = document.createElement('footer');
 
-  footer.classList.add('py-4','bg-dark','flex-shrink-0');
-  footer.innerHTML=`
+  footer.classList.add('py-4', 'bg-dark', 'flex-shrink-0');
+  footer.innerHTML = `
   <div class="container text-center">
     <a href='https://www.freepik.com/photos/background' class='text-muted'>Background photo created by benzoix - www.freepik.com</a>
   </div>`;
@@ -37,4 +36,4 @@ const pageLoad = (() => {
   contentContainer.append(footer);
 })();
 
-export { pageLoad };
+export default pageLoad;
