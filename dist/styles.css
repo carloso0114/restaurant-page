@@ -40,7 +40,7 @@ footer {
     margin-top: auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     #content {
         max-width: 320px;
     }
