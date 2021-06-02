@@ -18,7 +18,7 @@ const renderHomePage = (() => ({
     description.textContent = "Food understands that the only safe haven from Chuck Norris' fists is inside his own body.";
     backgroundDiv.classList.add('background', 'my-2', 'text-center');
     logo.src = './images/logo.png';
-    logo.classList.add('rounded-circle', 'my-1');
+    logo.classList.add('rounded-circle', 'my-1','max-width-pic');
     title.textContent = 'Welcome to';
     main.innerHTML = '';
     main.classList.add('mx-auto');
