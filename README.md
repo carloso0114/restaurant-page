@@ -23,7 +23,7 @@
 
 ## Watch the Live Version
 
-[Live Demo](https://rawcdn.githack.com/carloso0114/restaurant-page/1eb2c58a15b2f47cdb09539a5bbe26f1c6977e75/dist/index.html)
+[Live Demo](https://rawcdn.githack.com/carloso0114/restaurant-page/65bba9700fbe845cc5681ee6b15c0357e9113e10/dist/index.html)
 
 ### Prerequisites
 
